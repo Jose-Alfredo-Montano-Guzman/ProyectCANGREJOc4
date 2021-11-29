@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('../img/fondoLogin.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+#login .container #login-row #login-column #login-box {
+  margin-top: 60px;
+  max-width: 600px;
+  height: 320px;
+  border: 5px solid #9c9c9c;
+  border-radius: 40px;
+  background-color: #eaeaea;
+}
+#login .container #login-row #login-column #login-box #login-form {
+  padding: 20px;
+}
+#login
+  .container
+  #login-row
+  #login-column
+  #login-box
+  #login-form
+  #register-link {
+  margin-top: -85px;
+}
+
+.logoLogin{
+  width: 500px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 40px;
+  opacity: 0.9;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- linea 8 para hacer que se vea en dispositivos moviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/login.css">
+    <title>Acceso al Sistema</title>
+</head>
+
+<body>
+    <div id="login">
+        <div>
+            <img src="img/LoginImg.JPG" class="logoLogin" align="center">
+        </div>
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                        <form id="login" onsubmit="procesaFormulario(event)" class="form" method="post">
+                            <h3 class="text-center text-info">Inicio de sesion</h3>
+                            <div class="form-group">
+                                <label for="useremail" class="text-info">E-mail:</label><br />
+                                <input type="email" name="email" id="user-email" class="form-control"
+                                    placeholder="Ingrese email" required />
+                                <div class="valid-feedback">Email válido</div>
+                                <div class="invalid-feedback">Por favor registre el email.</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="text-info">Contraseña:</label><br />
+                                <input type="password" name="password" id="user-password" class="form-control"
+                                    placeholder="Ingrese la contraseña" required />
+                                <div class="valid-feedback">Contraseña válida.</div>
+                                <div class="invalid-feedback">Por favor registre la contraseña.</div>
+                            </div>
+                            <div class="form-group text-center">
+                                <input type="submit" name="submit" class="btn btn-info btn-md" value="Ingresar" />
+                            </div>
+                            <div class="form-group text-center">
+                                <label for="remember-me" class="text-info">
+                                    <span>No tienes una cuenta? <a href="registro.html" class="text-info">Crea tu cuenta
+                                            aqui</a></span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/form.js"></script>
+</body>
+
+</html>
